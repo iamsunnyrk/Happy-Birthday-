@@ -10,19 +10,18 @@
 </head>
 <body>
     <div class="container-fluid">
-    <header>
- <video autoplay id="Welcome"  >
-     <source src="videos\Man.3gpp" type="video/mp4">
- </video>
+     <header> 
+        <div class="bg">
  <div class="container">
     <i data-toggle="popover" data-trigger="manual" data-content="I wanted to text you...but!!!" class="tip-container" title="WhatsApp" data-placement="right"></i>
   </div>
- </header>
+</div>
+  </header> 
 
 
  <div class="content">
-     <button id="myBtn" data-toggle="button" class="pop" onclick="myFunction()" > Pause</button>
-     <button id="button" class="float-left submit-button"> Next</button>
+     <button id="myBtn" data-toggle="button" class="pop" > Start</button>
+     <button id="btn" > Next</button>
  </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,24 +35,24 @@
     var video=document.getElementById("Welcome");
     var btn=document.getElementById("myBtn");
 
-    $(document).ready(function(){
-        video.pause();
-            btn.innerHTML="Play";  
-});
+//     $(document).ready(function(){
+//         video.pause();
+//             btn.innerHTML="Play";  
+// });
   
 
-    function myFunction(){
-        if(video.paused){
-            video.play();
-            btn.innerHTML="Pause";
-        }
-        else {
-            video.pause();
-            btn.innerHTML="Play";
-        }
+   // function myFunction(){
+//         if(video.paused){
+//             video.play();
+//             btn.innerHTML="Pause";
+//         }
+//         else {
+//             video.pause();
+//             btn.innerHTML="Play";
+//         }
         
-        //$('[Data-toggle="popover"]').popover('show');
-    }
+  //  $('[Data-toggle="popover"]').popover('show');
+   // }
 
  $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -61,9 +60,9 @@
 
 $(function () {
   $('[data-toggle="popover"]').popover({
-        delay: {show: 6000, hide: 1000 },
+        delay: {show: 1000, hide: 1000 },
         html: true,
-        template: '<div class="popover"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-footer"><a href="#" class="btn btn-success btn-sm">Send</a></div></div>'
+        template: '<div class="popover"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-footer"><a href="#" class="btn btn-success btn-sm">Click below on Next</a></div></div>'
   }
   )
 })
@@ -75,7 +74,7 @@ $('#myBtn').on('click', function()
 });
 
 $(document).ready(function(){
-  $("#button").click(function(){
+  $("#btn").click(function(){
     $("body").fadeOut();
     location.href = "second.html";
   });
