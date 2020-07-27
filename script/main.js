@@ -18,7 +18,11 @@ const animationTimeline = () => {
     rotationX: 5,
     skewX: "15deg"
   };
-
+  
+	$('#play').click(function(){
+		var audio = $('.song')[0];
+        audio.play();
+  });
   const ideaTextTransLeave = {
     opacity: 0,
     y: 20,
