@@ -101,7 +101,25 @@ body {
 .five .idea-5 {
   font-size: 4rem;
 }
-
+.five .idea-6 {
+  font-size: 4rem;
+}
+.five .idea-7 {
+  font-size: 4rem;
+}
+.five .idea-8 {
+  font-size: 4rem;
+}
+.five .idea-9 {
+  font-size: 4rem;
+}
+.five .idea-10 {
+  font-size: 4rem;
+}
+.idea-7 span,
+.idea-9 span,
+.idea-8 span,
+.idea-10 span,
 .idea-5 span,
 .idea-6 span,
 .wish-hbd span {
@@ -109,13 +127,6 @@ body {
 }
 
 .idea-6 span {
-  font-size: 15rem;
-}
-.idea-7 span {
-  font-size: 15rem;
-}.idea-8 span {
-  font-size: 15rem;
-}.idea-9 span {
   font-size: 15rem;
 }
 .six {
