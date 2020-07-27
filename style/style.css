@@ -12,7 +12,7 @@ body {
   width: 100vh;
   margin: 0 auto;
   text-align: center;
-  /* visibility: hidden; */
+  visibility: hidden; 
   position: relative;
   overflow: hidden; 
 }
