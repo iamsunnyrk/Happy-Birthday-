@@ -1,7 +1,19 @@
-body {
-	background-color:lightyellow;
+body, html {
+  height: 100%;
+  margin: 0;
 }
+.bg {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/819635/pexels-photo-819635.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #myBtn {
 	width: 200px;
 	font-size: 18px;
@@ -10,7 +22,16 @@ body {
 	background: #000;
 	color: #fff;
 	cursor: pointer;
-  }
+	}
+	#btn {
+		width: 200px;
+		font-size: 18px;
+		padding: 10px;
+		border: none;
+		background: #000;
+		color: #fff;
+		cursor: pointer;
+		}
   .content {
 	color: #f1f1f1;
 	display: flex;
@@ -22,7 +43,11 @@ body {
   #myBtn:hover {
 	background: #ddd;
 	color: black;
-  }
+	}
+	#btn:hover {
+		background: #ddd;
+		color: black;
+		}
 header {
 	position: relative;
 	height: 85vh;
@@ -55,7 +80,7 @@ header {
   }
 
   .popover{
-    width:200px;   
+    width:400px;   
 }
 
 .popover-header{
